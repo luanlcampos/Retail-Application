@@ -73,7 +73,7 @@ rollback;
 /***********************************************************************************************/
 -- Procedure 4
 -- Add an order in the ORDERLINES table with the procedure parameters
-CREATE OR REPLACE PROCEDURE add_order_item (orderID IN orderlines.order_no%type,
+CREATE OR REPLACE PROCEDURE add_orderline (orderID IN orderlines.order_no%type,
                                   lineID IN orderlines.line_no%type,
                                   productID IN orderlines.prod_no%type,
                                   quant IN orderlines.qty%type,
